@@ -1,24 +1,11 @@
-# vue-board
+# 개발 과제 1주차
 
-## Project setup
-```
-npm install
-```
+- **과제명?** 계산기 개발
+- **기반 기술?** Vue.js + HTML + JavaScript
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<br>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### 🍰 둘러보기
 
-### Lints and fixes files
-```
-npm run lint
-```
+![11](C:\Users\laeag\Desktop\11.gif)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -77,7 +77,8 @@ export default {
                 if (this.result.length == 0 || this.result.charAt(this.result.length-1) === ' ') {
                     this.append('0.');
                 } else if (this.result.charAt(this.result.length-1) !== '.') {
-                    this.append('.');
+                    console.log("Vvv");
+                    this.result = `${this.result}.`;
                 }
             }
         },
