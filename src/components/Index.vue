@@ -1,7 +1,7 @@
 <template>
         <div>
              <div class="calculator">
-                <div class="display">{{result || '0'}}</div>
+                <div class="display">{{result}}</div>
                 <div @click="clear" class="btn etc">AC</div>
                 <div @click="sign" class="btn etc">+/-</div>
                 <div @click="del" class="btn etc">DEL</div>
@@ -46,7 +46,10 @@ export default {
                 this.result = this.result.slice(0,-3);
             } else {
                 this.result = this.result.slice(0,-1); 
-            } 
+            }
+            if(this.result.length == 0){
+                this.result = "0";
+            }
         },
         append(number) {
             if(this.result === '0'){
