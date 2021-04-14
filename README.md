@@ -7,5 +7,5 @@
 
 ### 🍰 둘러보기
 
-![11](C:\Users\laeag\Desktop\11.gif)
+![11](notes/11.gif)
 
