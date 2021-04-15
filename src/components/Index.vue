@@ -38,8 +38,12 @@ export default {
             this.result = '0'; 
         },
         sign() {
-            this.result = this.result.charAt(0) === '-' ? 
-            this.result.slice(1) : `-${this.result}`;
+            var idx = this.result.lastIndexOf(' ') + 1;
+            if(this.result.charAt(idx) === '-'){
+                this.result = this.result.slice(0, idx) + this.result.slice(idx+1)
+            } else {
+                this.result = this.result.slice(0, idx) + '-' + this.result.slice(idx)
+            }
         },
         del() {
             if(this.result.charAt(this.result.length-1) === ' '){
